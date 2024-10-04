@@ -1,7 +1,7 @@
 import  addToCartAction from '../addToCart/addToCartAction.js';
 import  searchAction  from '../search/searchAction.js';
 import viewCartAction from '../viewCart/viewCartAction.js';
-
+import { expect } from 'chai'; 
 
 describe("Search Functionality check", ()=>{
      it("should perform a search operation ", async()=>{
@@ -16,4 +16,5 @@ describe("Search Functionality check", ()=>{
           await viewCartAction.clickViewCart();
           
      })
+     
 })

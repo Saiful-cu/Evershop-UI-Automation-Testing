@@ -1,6 +1,17 @@
 {
           "cSpell.words": [
                "flyknit",
+               "Lambugani",
                "wdio"
-          ]
+          ],
+          "javascript.preferences.autoImportFileExcludePatterns": [
+               "\"files.exclude\": {   \"._*\": true }"
+          ],
+          "workbench.editor.customLabels.patterns": {
+               "\"files.exclude\": {   \"._*\": true }": ""
+          },
+          "files.exclude": {
+               "{   \"files.exclude\": {     \"**/._*\": true   } }": true
+          },
+          "workbench.settings.useSplitJSON": true
 }

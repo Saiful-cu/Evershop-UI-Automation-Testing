@@ -1,6 +1,6 @@
 class AddToCartObject{
      get productSize(){
-          return $("//a[text() ='X']");
+          return $("//a[text() ='X' or text()='M']");
      }
      get productColor(){
           return $("//a[text() ='Black']");

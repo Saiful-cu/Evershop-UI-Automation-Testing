@@ -1,18 +1,19 @@
 {
-  "name": "WebDriver.io",
-  "type": "module",
-  "devDependencies": {
-    "@wdio/cli": "^9.1.2",
-    "@wdio/local-runner": "^9.1.2",
-    "@wdio/mocha-framework": "^9.1.2",
-    "chai": "^5.1.1"
-  },
-  "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
-  },
-  "dependencies": {
-    "chromedriver": "^129.0.1",
-    "mocha": "^10.7.3",
-    "wdio-chromedriver-service": "^8.1.1"
-  }
+    "name": "WebDriver.io",
+    "type": "module",
+    "devDependencies": {
+        "@wdio/cli": "^9.1.2",
+        "@wdio/local-runner": "^9.1.2",
+        "@wdio/mocha-framework": "^9.1.2",
+        "chai": "^5.1.1"
+    },
+    "scripts": {
+        "wdio": "wdio run wdio.conf.js",
+        "cartAndVerify": "wdio wdio.conf.js --suite addToCartAndVerify "
+    },
+    "dependencies": {
+        "chromedriver": "^129.0.1",
+        "mocha": "^10.7.3",
+        "wdio-chromedriver-service": "^8.1.1"
+    }
 }

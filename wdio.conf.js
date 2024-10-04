@@ -1,3 +1,6 @@
+const verifyCart = './test/spec/verifyCart.spec.js';
+const addToCart = './test/spec/addToCart.spec.js';
+const addToCartVerify = './test/spec/addToCartThroughCategories.spec.js';
 export const config = {
     //
     // ====================
@@ -21,8 +24,16 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/spec/*.js'
+        //addToCart,verifyCart
+        addToCartVerify
     ],
+    suites: {
+        addToCartAndVerify :[
+            [
+                addToCart,verifyCart
+            ]
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -43,7 +54,7 @@ export const config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    // maxInstances: 10,
+    maxInstances: 10,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -51,12 +62,7 @@ export const config = {
     //
     capabilities: [{
         // capabilities for local browser web tests
-        // browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
-        maxInstances: 1,  // Run all tests in one browser instance
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-            args: ['--disable-infobars', '--window-size=1920,1080'],
-        },
+        browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
     }],
 
     //
@@ -90,7 +96,7 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://demo.evershop.io/',
+    // baseUrl: 'http://localhost:8080',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -203,9 +209,8 @@ export const config = {
      * Hook that gets executed before the suite starts
      * @param {object} suite suite details
      */
-    beforeSuite: async function (suite) {
-        await browser.maxInstances(10)
-    },
+    // beforeSuite: function (suite) {
+    // },
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
