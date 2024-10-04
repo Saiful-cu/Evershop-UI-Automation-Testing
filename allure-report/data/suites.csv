@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4513","should perform a View Cart  operation ","","Fri Oct 04 12:09:45 BDT 2024","passed","Fri Oct 04 12:09:49 BDT 2024","","Search Functionality check","",""
+"","27662"," add cart and verify the total price.","","Fri Oct 04 12:09:27 BDT 2024","passed","Fri Oct 04 12:09:55 BDT 2024","","Product verify through","",""
+"","10245","should product price is correct in cart","","Fri Oct 04 12:09:27 BDT 2024","broken","Fri Oct 04 12:09:37 BDT 2024","","Verify The Cart Total Amount ","",""
+"","21982","should perform a search operation ","","Fri Oct 04 12:09:27 BDT 2024","passed","Fri Oct 04 12:09:49 BDT 2024","","Search Functionality check","",""
+"","4219","should perform a Add To Cart operation ","","Fri Oct 04 12:09:40 BDT 2024","passed","Fri Oct 04 12:09:44 BDT 2024","","Search Functionality check","",""

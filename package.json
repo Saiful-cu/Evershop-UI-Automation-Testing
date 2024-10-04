@@ -1,7 +1,8 @@
 {
-    "name": "WebDriver.io",
+    "name": "Webdriver.io",
     "type": "module",
     "devDependencies": {
+        "@wdio/allure-reporter": "^9.1.2",
         "@wdio/cli": "^9.1.2",
         "@wdio/local-runner": "^9.1.2",
         "@wdio/mocha-framework": "^9.1.2",
@@ -9,9 +10,11 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
-        "cartAndVerify": "wdio wdio.conf.js --suite addToCartAndVerify "
+        "cartAndVerify": "wdio wdio.conf.js --suite addToCartAndVerify ",
+        "report": "allure generate allure-results --clean && allure open"
     },
     "dependencies": {
+        "allure-commandline": "^2.30.0",
         "chromedriver": "^129.0.1",
         "mocha": "^10.7.3",
         "wdio-chromedriver-service": "^8.1.1"
