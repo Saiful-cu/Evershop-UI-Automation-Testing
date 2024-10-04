@@ -24,14 +24,14 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        //addToCart,verifyCart
+        addToCart,verifyCart,
         addToCartVerify
     ],
     suites: {
         addToCartAndVerify :[
             [
                 addToCart,verifyCart
-            ]
+            ],addToCartVerify
         ]
     },
     // Patterns to exclude.
